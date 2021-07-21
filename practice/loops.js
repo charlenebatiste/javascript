@@ -47,3 +47,22 @@ function vowelsAndConsonants(string) {
 
 
 vowelsAndConsonants(s)
+
+
+// second way using for loop
+
+function vowelsAndCons(s) {
+    let vowels = ["a", "e", "i", "o", "u"];
+
+    for (let v of s) {
+        // gives each element in the string the value v
+        if (vowels.includes(v))
+            // checks to see if vowels invlude that charcter
+            console.log(v);
+    }
+    // initiates second loop for consonants
+    for (let c of s) {
+        if (!vowels.includes(c))
+            console.log(c);
+    }
+}
